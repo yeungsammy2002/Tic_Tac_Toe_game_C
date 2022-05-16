@@ -266,16 +266,12 @@ int ai(game* g, int move) {
 
 	// grow in slopes
 	if (g->scs[1].slp[0] == 1 && g->e.slp[0] == 2) {
-		printf("slope b grow detect!");
-		Sleep(3000);
 		for (int i = 0; i < 3; ++i) {
 			if (g->vals[i][i].who == 2)
 				return g->vals[i][i].pos;
 		}
 	}
 	if (g->scs[1].slp[1] == 1 && g->e.slp[1] == 2) {
-		printf("slope f grow detect!");
-		Sleep(3000);
 		for (int i = 0, j = 2; i < 3; ++i, --j) {
 			if (g->vals[i][j].who == 2)
 				return g->vals[i][j].pos;
