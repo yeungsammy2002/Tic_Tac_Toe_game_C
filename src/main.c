@@ -155,7 +155,7 @@ bool check_for_win(game* g, int player) {
 }
 
 void print_b(game* g) {
-	system("clear");
+	system("cls");
 	printf("\n\t\t\t\t\t    Welcome to Tic Tac Toe game!\n");
 	printf("\n\t\t\t\t\t       You = %c     Com = %c\n", g->p[0], g->p[1]);
 	if (g->p0)
